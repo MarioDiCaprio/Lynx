@@ -2,6 +2,12 @@ from typing import Tuple, List
 import chess
 
 
+STARTING_FEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+"""
+The FEN position of the initial board.
+"""
+
+
 def fen_to_board(fen: str) -> List[List[str]]:
     """
     Extracts the board representation from the given FEN.
